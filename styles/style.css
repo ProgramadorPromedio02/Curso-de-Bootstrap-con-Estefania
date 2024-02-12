@@ -1,0 +1,654 @@
+/*Estilos Generales*/
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.seccion-oscura {
+  color: white;
+  background-color: #1b1b32;
+}
+
+.seccion-clara {
+  color: black;
+  background-color: white;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: "Rubik Dirt", cursive;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
+.texto-negro {
+  color: black;
+}
+
+.texto-blanco {
+  color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*id*/
+
+#gomu-icon {
+  width: 3.5rem; /* Reducir el tamaño del logo */
+  height: 3.5rem;
+}
+
+#gomu-picture {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+/* Barra de Navegación */
+
+.navbar {
+  padding: 1rem 2rem; /* Reducir el espacio horizontal */
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Sección Hero */
+
+.hero {
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-principal h1 {
+  font-size: 2rem;
+  font-family: "Rubik Dirt", cursive;
+  color: #08129f;
+}
+
+.hero-principal h2 {
+  font-size: 1.2rem;
+  color: #32355e;
+}
+
+.hero-inferior-imagen {
+  width: 30rem;
+  height: auto;
+}
+
+/*Sobre mí*/
+
+.sobre-mi {
+  height: 500px;
+  padding: 10px;
+}
+
+.sobre-mi .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+/*Experiencia*/
+
+.experiencia {
+  padding: 40px 20px; /* Reducir el espacio interior en pantallas pequeñas */
+}
+
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar los elementos horizontalmente */
+  text-align: center; /* Alinear el texto al centro */
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+  color: white;
+  background-color: black;
+}
+
+.experiencia-titulo {
+  font-size: 1.5rem; /* Ajustar el tamaño del título para dispositivos pequeños */
+  margin: 10px 0;
+}
+
+.experiencia i {
+  font-size: 2rem;
+  color: #7ade30;
+  background-color: #0a0a23;
+  padding: 8px 15px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.badges-contenedor {
+  font-size: 16px; /* Ajustar el tamaño de la fuente de los badges para dispositivos pequeños */
+  margin: 10px 0;
+}
+.badge {
+  margin: 5px;
+}
+
+/*Proyectos*/
+
+.proyectos-recientes {
+  padding: 40px;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+/*Artículos*/
+
+.articulos {
+  min-height: 500px;
+  padding: 30px;
+}
+
+.articulos .card {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.articulos .card-header {
+  font-weight: bold;
+}
+
+/*Testímonios*/
+
+.testimonios {
+  padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonio-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.testimonio-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonio-info p {
+  margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {
+  font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+  font-size: 0.9rem;
+  color: #656060;
+}
+
+/*Contacto*/
+
+.contacto .container {
+  max-width: 1110px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color: rgb(13, 110, 253);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.contacto button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+  color: black;
+}
+
+/*Footer*/
+
+footer {
+  min-height: 500px;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin: 30px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  text-decoration-thickness: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transform: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+  color: black;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+/*Adaptable(Responsivo)*/
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 110px;
+    width: 110px;
+  }
+
+  .testimonio-texto {
+    font-size: 12px;
+  }
+}
+
+/* Adaptable (Responsivo) para Sección Hero */
+
+/* Para dispositivos muy pequeños (por ejemplo, teléfonos pequeños) */
+@media screen and (max-width: 479px) {
+  #gomu-picture {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+/* Para dispositivos pequeños (por ejemplo, teléfonos medianos) */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  #gomu-picture {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+/* Para tabletas */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #gomu-picture {
+    width: 28rem;
+    height: 28rem;
+  }
+}
+
+/* Adaptable (Responsivo) para Sección Hero Inferior */
+
+/* Para dispositivos muy pequeños (por ejemplo, teléfonos pequeños) */
+@media screen and (max-width: 479px) {
+  .hero-inferior-imagen {
+    max-width: 100px; /* ajusta el tamaño según sea necesario */
+    height: auto; /* asegura que la altura se ajuste automáticamente */
+  }
+}
+
+/* Para dispositivos pequeños (por ejemplo, teléfonos medianos) */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero-inferior-imagen {
+    max-width: 200px; /* ajusta el tamaño según sea necesario */
+    height: auto; /* asegura que la altura se ajuste automáticamente */
+  }
+}
+
+/* Para tabletas */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-inferior-imagen {
+    max-width: 300px; /* ajusta el tamaño según sea necesario */
+    height: auto; /* asegura que la altura se ajuste automáticamente */
+  }
+}
+
+/* Adaptable (Responsivo) para Sobre Mí */
+
+/* Para dispositivos muy pequeños (por ejemplo, teléfonos pequeños) */
+@media screen and (max-width: 479px) {
+  .seccion-titulo {
+    font-size: 1.5rem; /* Ajusta el tamaño según sea necesario */
+  }
+
+  .seccion-texto {
+    font-size: 1rem; /* Ajusta el tamaño según sea necesario */
+  }
+
+  .sobre-mi {
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+
+  .sobre-mi .contenedor {
+    padding: 10px; /* Ajusta el relleno según sea necesario */
+  }
+}
+
+/* Para dispositivos pequeños (por ejemplo, teléfonos medianos) */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .seccion-titulo {
+    font-size: 1.8rem; /* Ajusta el tamaño según sea necesario */
+  }
+
+  .seccion-texto {
+    font-size: 1.2rem; /* Ajusta el tamaño según sea necesario */
+  }
+
+  .sobre-mi {
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+
+  .sobre-mi .contenedor {
+    padding: 15px; /* Ajusta el relleno según sea necesario */
+  }
+}
+
+/* Para tabletas */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .seccion-titulo {
+    font-size: 2rem; /* Ajusta el tamaño según sea necesario */
+  }
+
+  .seccion-texto {
+    font-size: 1.3rem; /* Ajusta el tamaño según sea necesario */
+  }
+
+  .sobre-mi {
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+
+  .sobre-mi .contenedor {
+    padding: 20px; /* Ajusta el relleno según sea necesario */
+  }
+}
+
+/* Adaptable (Responsivo) para Títulos de Proyectos */
+
+/* Para dispositivos muy pequeños (por ejemplo, teléfonos pequeños) */
+@media screen and (max-width: 479px) {
+  .proyecto .overlay p {
+    font-size: 18px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  .proyecto .overlay h5 {
+    font-size: 14px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  .overlay i {
+    font-size: 60px;
+  }
+}
+
+/* Para dispositivos pequeños (por ejemplo, teléfonos medianos) */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .proyecto .overlay p {
+    font-size: 20px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  .proyecto .overlay h5 {
+    font-size: 20px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  .overlay i {
+    font-size: 60px;
+  }
+}
+
+/* Para tabletas */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .proyecto .overlay p {
+    font-size: 22px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  .proyecto .overlay h5 {
+    font-size: 18px; /* Ajusta el tamaño del texto según sea necesario */
+  }
+  .overlay i {
+    font-size: 60px;
+  }
+}
+
+/* Estilos para laptops */
+@media screen and (min-width: 992px) {
+  /* Barra de Navegación */
+  .navbar {
+    padding: 1rem 2rem; /* Reducir el espacio horizontal */
+  }
+
+  /* Logo de la barra de navegación */
+  #gomu-icon {
+    width: 3.5rem; /* Reducir el tamaño del logo */
+    height: 3.5rem;
+  }
+
+  /* Sección Hero */
+  .hero-principal {
+    padding: 2rem;
+  }
+
+  .hero-principal h1 {
+    font-size: 2rem;
+  }
+
+  .hero-principal h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-inferior-imagen {
+    width: 30rem;
+    height: auto;
+  }
+
+  /* Sobre mí */
+  .sobre-mi {
+    padding: 2rem; /* Ajustar el espacio interno */
+  }
+
+  .sobre-mi .contenedor {
+    max-width: 800px; /* Ajustar el ancho máximo */
+  }
+
+  /* Experiencia */
+  .experiencia {
+    padding: 2rem; /* Ajustar el espacio interno */
+  }
+
+  .experiencia .columna {
+    padding: 1.5rem;
+  }
+
+  .experiencia-titulo {
+    font-size: 1.8rem; /* Ajustar el tamaño del título */
+    margin: 1rem 0; /* Ajustar el espacio alrededor del título */
+  }
+
+  .experiencia i {
+    font-size: 2.5rem; /* Ajustar el tamaño del icono */
+    margin-bottom: 1rem; /* Ajustar el espacio debajo del icono */
+  }
+
+  .badges-contenedor {
+    margin: 1rem 0; /* Ajustar el espacio entre los badges */
+  }
+
+  /* Proyectos */
+  .proyectos-recientes {
+    padding: 2rem; /* Ajustar el espacio interno */
+  }
+
+  .proyectos-contenedor {
+    padding-top: 3rem; /* Ajustar el espacio arriba del contenedor */
+    margin-bottom: 2rem; /* Ajustar el espacio abajo del contenedor */
+  }
+
+  .proyectos-recientes img {
+    padding: 0.5rem; /* Ajustar el espacio alrededor de las imágenes */
+    border-radius: 0.5rem; /* Ajustar el radio de borde de las imágenes */
+  }
+
+  .overlay p {
+    font-size: 1.5rem; /* Ajustar el tamaño del texto */
+  }
+
+  .overlay h5 {
+    font-size: 1.2rem; /* Ajustar el tamaño del texto */
+  }
+
+  .overlay i {
+    font-size: 3.5rem; /* Ajustar el tamaño del icono */
+  }
+}
